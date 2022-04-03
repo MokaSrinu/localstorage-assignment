@@ -12,22 +12,22 @@
     <button id="unlikefunction" onclick="unlikefun()">unlike</button>
 </body>
 <script>
-    var count=0;
-    if(localStorage.getItem("count") === null){
-        count=0;
+    var counter=0;
+    if(localStorage.getItem("counter") === null){
+        counter=0;
     }else{
-        count=localStorage.getItem("count");
+        counter=localStorage.getItem("counter");
     }
-     document.querySelector("#head").innerText=count;
+     document.querySelector("#head").innerText=counter;
     function likefun(){
-      count++;
-      localStorage.setItem("count",count);
-      document.querySelector("#head").innerText=count;
+      counter++;
+      localStorage.setItem("counter",counter);
+      document.querySelector("#head").innerText=counter;
     }
     function unlikefun(){
-      count--;
-      localStorage.setItem("count",count);
-      document.querySelector("#head").innerText=count;
+      counter--;
+      localStorage.setItem("counter",counter);
+      document.querySelector("#head").innerText=counter;
     }
 </script>
 </html>
